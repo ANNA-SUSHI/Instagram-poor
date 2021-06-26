@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		A4B47F99267E089A007020A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B47F98267E089A007020A1 /* AppDelegate.swift */; };
 		A4B47F9B267E089A007020A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B47F9A267E089A007020A1 /* SceneDelegate.swift */; };
-		A4B47F9D267E089A007020A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B47F9C267E089A007020A1 /* ViewController.swift */; };
 		A4B47FA0267E089A007020A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B47F9E267E089A007020A1 /* Main.storyboard */; };
 		A4B47FA2267E089C007020A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B47FA1267E089C007020A1 /* Assets.xcassets */; };
 		A4B47FA5267E089C007020A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B47FA3267E089C007020A1 /* LaunchScreen.storyboard */; };
+		A4B47FB2267E0F6C007020A1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B47FB1267E0F6C007020A1 /* LoginViewController.swift */; };
+		A4B47FB5267E1076007020A1 /* HomeViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B47FB4267E1076007020A1 /* HomeViewController .swift */; };
+		A4B47FB8267E10FD007020A1 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B47FB7267E10FD007020A1 /* ImageSelectViewController.swift */; };
+		A4B47FBB267E1139007020A1 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B47FBA267E1139007020A1 /* SettingViewController.swift */; };
+		A4B47FBE267E1162007020A1 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B47FBD267E1162007020A1 /* PostViewController.swift */; };
+		A4C1329B2686382A006FD8AF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C1329A2686382A006FD8AF /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A4B47F95267E089A007020A1 /* Instagram poor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram poor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B47F98267E089A007020A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4B47F9A267E089A007020A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A4B47F9C267E089A007020A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A4B47F9F267E089A007020A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4B47FA1267E089C007020A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4B47FA4267E089C007020A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4B47FA6267E089C007020A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4B47FB1267E0F6C007020A1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A4B47FB4267E1076007020A1 /* HomeViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController .swift"; sourceTree = "<group>"; };
+		A4B47FB7267E10FD007020A1 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
+		A4B47FBA267E1139007020A1 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		A4B47FBD267E1162007020A1 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		A4C1329A2686382A006FD8AF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +66,15 @@
 		A4B47F97267E089A007020A1 /* Instagram poor */ = {
 			isa = PBXGroup;
 			children = (
+				A4C1329A2686382A006FD8AF /* TabBarController.swift */,
 				A4B47F98267E089A007020A1 /* AppDelegate.swift */,
 				A4B47F9A267E089A007020A1 /* SceneDelegate.swift */,
-				A4B47F9C267E089A007020A1 /* ViewController.swift */,
 				A4B47F9E267E089A007020A1 /* Main.storyboard */,
+				A4B47FBD267E1162007020A1 /* PostViewController.swift */,
+				A4B47FBA267E1139007020A1 /* SettingViewController.swift */,
+				A4B47FB7267E10FD007020A1 /* ImageSelectViewController.swift */,
+				A4B47FB4267E1076007020A1 /* HomeViewController .swift */,
+				A4B47FB1267E0F6C007020A1 /* LoginViewController.swift */,
 				A4B47FA1267E089C007020A1 /* Assets.xcassets */,
 				A4B47FA3267E089C007020A1 /* LaunchScreen.storyboard */,
 				A4B47FA6267E089C007020A1 /* Info.plist */,
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4B47F9D267E089A007020A1 /* ViewController.swift in Sources */,
+				A4B47FBE267E1162007020A1 /* PostViewController.swift in Sources */,
+				A4C1329B2686382A006FD8AF /* TabBarController.swift in Sources */,
+				A4B47FB8267E10FD007020A1 /* ImageSelectViewController.swift in Sources */,
+				A4B47FB2267E0F6C007020A1 /* LoginViewController.swift in Sources */,
+				A4B47FB5267E1076007020A1 /* HomeViewController .swift in Sources */,
 				A4B47F99267E089A007020A1 /* AppDelegate.swift in Sources */,
+				A4B47FBB267E1139007020A1 /* SettingViewController.swift in Sources */,
 				A4B47F9B267E089A007020A1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
