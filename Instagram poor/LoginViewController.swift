@@ -7,8 +7,9 @@
 
 import Foundation
 import Firebase
+import SVProgressHUD
 
-class LoginViewController {
+class LoginViewController:UIViewController {
     @IBOutlet weak var mailAddressTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var displayNameTextField: UITextField!
@@ -21,7 +22,6 @@ class LoginViewController {
                     if address.isEmpty || password.isEmpty {
                         return
                     }
-        }
     
     
                     Auth.auth().signIn(withEmail: address, password: password) { authResult, error in
@@ -34,6 +34,7 @@ class LoginViewController {
                         // 画面を閉じてタブ画面に戻る
                         self.dismiss(animated: true, completion: nil)
                     }
+        }
     }
     @IBAction func handleCreateAccountButton(_ sender: Any) {
         if let address = mailAddressTextField.text, let password = passwordTextField.text, let displayName = displayNameTextField.text {
@@ -79,7 +80,7 @@ class LoginViewController {
                                 }
                             }
                         }
-                    }
+                     }
                 }
 
                 override func viewDidLoad() {

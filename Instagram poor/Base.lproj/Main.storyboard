@@ -11,7 +11,7 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Instagram_poor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
         <!--Post View Controller-->
         <scene sceneID="d3f-SW-t7u">
             <objects>
-                <viewController id="ZwB-wH-oa2" customClass="PostViewController" sceneMemberID="viewController">
+                <viewController id="ZwB-wH-oa2" customClass="PostViewController" customModule="Instagram_poor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qhk-DM-pRK">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,7 @@
         <!--Camera-->
         <scene sceneID="hgl-kS-9IK">
             <objects>
-                <viewController id="YVj-w8-Dnl" customClass="ImageSelectViewController" sceneMemberID="viewController">
+                <viewController id="YVj-w8-Dnl" customClass="ImageSelectViewController" customModule="Instagram_poor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DO0-c6-LdR">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,7 +58,7 @@
         <!--Setting-->
         <scene sceneID="TLK-gt-SR0">
             <objects>
-                <viewController id="0s5-R3-taH" customClass="SettingViewController" sceneMemberID="viewController">
+                <viewController id="0s5-R3-taH" customClass="SettingViewController" customModule="Instagram_poor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UrP-Z6-SPN">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,7 +101,7 @@
         <!--Login View Controller-->
         <scene sceneID="P5a-Pp-q0W">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="W0v-fx-kJz" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="W0v-fx-kJz" customClass="LoginViewController" customModule="Instagram_poor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I2v-WG-X7V" customClass="LoginViewController">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

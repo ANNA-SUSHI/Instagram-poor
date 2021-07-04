@@ -13,7 +13,7 @@ target 'Instagram poor' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   pod 'FirebaseUI/Storage'
-  Pod 'SVProgressHUD','2.2.5'
+  pod 'SVProgressHUD','2.2.5'
 end
 
 
