@@ -28,7 +28,9 @@ class ImageSelectViewController: UIViewController, UIImagePickerControllerDelega
                     pickerController.sourceType = .camera
                     self.present(pickerController, animated: true, completion: nil)
     }
-  }
+    }
+    
+        
     @IBAction func handleCancelButton(_ sender: Any) {
         // 画面を閉じる
                 self.dismiss(animated: true, completion: nil)

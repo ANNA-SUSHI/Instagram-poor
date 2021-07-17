@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rRM-4b-jDS">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rRM-4b-jDS">
                                 <rect key="frame" x="0.0" y="29" width="428" height="814"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -123,6 +123,9 @@
                                 <state key="normal" title="Camera" backgroundImage="btn">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="handleCameraButton:" destination="YVj-w8-Dnl" eventType="touchUpInside" id="Kc2-oa-Gu4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNP-37-Lkd">
                                 <rect key="frame" x="64" y="330" width="300" height="40"/>
@@ -268,7 +271,6 @@
                         </constraints>
                         <connections>
                             <outlet property="displayNameTextField" destination="VEP-sR-sEu" id="kzj-8x-uAw"/>
-                            <outlet property="handleLoginButton" destination="3LI-OH-1yK" id="gV6-dH-DOi"/>
                             <outlet property="mailAddressTextField" destination="oZX-5h-qSM" id="PEd-xY-I1C"/>
                             <outlet property="passwordTextField" destination="Pi2-Gp-XBS" id="qYo-Ir-vy6"/>
                         </connections>
