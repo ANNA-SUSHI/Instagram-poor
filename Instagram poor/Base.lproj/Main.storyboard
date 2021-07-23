@@ -204,7 +204,7 @@
         <scene sceneID="P5a-Pp-q0W">
             <objects>
                 <viewController storyboardIdentifier="Login" modalPresentationStyle="fullScreen" id="W0v-fx-kJz" customClass="LoginViewController" customModule="Instagram_poor" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="I2v-WG-X7V" customClass="LoginViewController">
+                    <view key="view" contentMode="scaleToFill" id="I2v-WG-X7V">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -240,7 +240,7 @@
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <state key="normal" title="login" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handleLoginButton:" destination="I2v-WG-X7V" eventType="touchUpInside" id="hL6-Ya-w2K"/>
+                                    <action selector="handleLoginButton:" destination="W0v-fx-kJz" eventType="touchUpInside" id="5FV-mT-u17"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2g-Aa-bhH">
@@ -250,8 +250,7 @@
                                 </constraints>
                                 <state key="normal" title="Create an account" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handleCreateAccountButton:" destination="I2v-WG-X7V" eventType="touchUpInside" id="flM-Gt-fvx"/>
-                                    <action selector="handleLoginButton:" destination="I2v-WG-X7V" eventType="touchUpInside" id="04Q-cy-kXs"/>
+                                    <action selector="handleCreateAccountButton:" destination="W0v-fx-kJz" eventType="touchUpInside" id="o8l-Mg-53t"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -269,12 +268,12 @@
                             <constraint firstItem="oZX-5h-qSM" firstAttribute="centerX" secondItem="I2v-WG-X7V" secondAttribute="centerX" id="pft-2y-S12"/>
                             <constraint firstItem="3LI-OH-1yK" firstAttribute="centerX" secondItem="I2v-WG-X7V" secondAttribute="centerX" id="w9K-Re-on7"/>
                         </constraints>
-                        <connections>
-                            <outlet property="displayNameTextField" destination="VEP-sR-sEu" id="kzj-8x-uAw"/>
-                            <outlet property="mailAddressTextField" destination="oZX-5h-qSM" id="PEd-xY-I1C"/>
-                            <outlet property="passwordTextField" destination="Pi2-Gp-XBS" id="qYo-Ir-vy6"/>
-                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="displayNameTextField" destination="VEP-sR-sEu" id="C3L-tv-pRk"/>
+                        <outlet property="mailAddressTextField" destination="oZX-5h-qSM" id="7ak-y3-wDL"/>
+                        <outlet property="passwordTextField" destination="Pi2-Gp-XBS" id="KV0-yr-ZjV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9c-AC-KEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
