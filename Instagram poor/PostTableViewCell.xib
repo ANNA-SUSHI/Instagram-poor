@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -30,23 +31,35 @@
                         </constraints>
                         <state key="normal" title="Button" image="like_none"/>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQi-gF-JfY">
-                        <rect key="frame" x="130" y="328.5" width="168" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUS-xg-cYg">
-                        <rect key="frame" x="30" y="369" width="268" height="272"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQi-gF-JfY">
+                        <rect key="frame" x="128" y="329" width="69" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qk-f6-IZN">
-                        <rect key="frame" x="80" y="328.5" width="40" height="21"/>
+                        <rect key="frame" x="80" y="307.5" width="40" height="63"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="btp-j2-vjz"/>
                         </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8E-ot-Noh">
+                        <rect key="frame" x="229" y="321" width="79" height="34"/>
+                        <state key="normal" title="Comment">
+                            <color key="titleColor" systemColor="labelColor"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhI-6n-QkA">
+                        <rect key="frame" x="29" y="514" width="269" height="126"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUS-xg-cYg">
+                        <rect key="frame" x="30" y="396" width="268" height="63"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -59,19 +72,28 @@
                     <constraint firstAttribute="bottomMargin" secondItem="UUS-xg-cYg" secondAttribute="bottom" constant="10" id="KZb-jK-mB6"/>
                     <constraint firstItem="UQi-gF-JfY" firstAttribute="leading" secondItem="8qk-f6-IZN" secondAttribute="trailing" constant="10" id="Og2-Kw-U0T"/>
                     <constraint firstItem="UUS-xg-cYg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="UrP-qj-22g"/>
+                    <constraint firstItem="C8E-ot-Noh" firstAttribute="trailing" secondItem="hX5-nk-b0Y" secondAttribute="trailing" id="X5g-mU-Odz"/>
                     <constraint firstItem="8qk-f6-IZN" firstAttribute="leading" secondItem="gtT-RE-cQa" secondAttribute="trailing" constant="10" id="Y9T-df-dgt"/>
+                    <constraint firstItem="C8E-ot-Noh" firstAttribute="baseline" secondItem="8qk-f6-IZN" secondAttribute="firstBaseline" id="c3z-MV-R08"/>
                     <constraint firstAttribute="trailingMargin" secondItem="UQi-gF-JfY" secondAttribute="trailing" constant="10" id="e2v-At-iau"/>
+                    <constraint firstItem="XhI-6n-QkA" firstAttribute="centerX" secondItem="UUS-xg-cYg" secondAttribute="centerX" id="g4R-0U-f35"/>
                     <constraint firstItem="hX5-nk-b0Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="gHM-cC-l7p"/>
+                    <constraint firstItem="UUS-xg-cYg" firstAttribute="top" secondItem="C8E-ot-Noh" secondAttribute="bottom" constant="41" id="ifx-mO-lUG"/>
                     <constraint firstItem="hX5-nk-b0Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="l2L-m0-Ol5"/>
                     <constraint firstItem="8qk-f6-IZN" firstAttribute="centerY" secondItem="gtT-RE-cQa" secondAttribute="centerY" id="naY-NG-USr"/>
                     <constraint firstItem="gtT-RE-cQa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="rm1-Ld-fps"/>
+                    <constraint firstItem="XhI-6n-QkA" firstAttribute="top" secondItem="UUS-xg-cYg" secondAttribute="bottom" constant="55" id="tP4-3l-t5L"/>
+                    <constraint firstItem="XhI-6n-QkA" firstAttribute="trailing" secondItem="UUS-xg-cYg" secondAttribute="trailing" id="w5I-2R-z0H"/>
                     <constraint firstItem="UQi-gF-JfY" firstAttribute="centerY" secondItem="gtT-RE-cQa" secondAttribute="centerY" id="w87-qs-XKF"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XhI-6n-QkA" secondAttribute="bottom" constant="11" id="xhj-18-SGD"/>
                     <constraint firstAttribute="trailingMargin" secondItem="hX5-nk-b0Y" secondAttribute="trailing" id="zcK-kd-9RT"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="captionLabel" destination="UUS-xg-cYg" id="G6x-bD-WEJ"/>
+                <outlet property="commentButton" destination="C8E-ot-Noh" id="UM9-W1-j8T"/>
+                <outlet property="commentLabel" destination="XhI-6n-QkA" id="w6J-pW-EaU"/>
                 <outlet property="dateLabel" destination="UQi-gF-JfY" id="kxK-JX-uqF"/>
                 <outlet property="likeButton" destination="gtT-RE-cQa" id="cij-ts-tbM"/>
                 <outlet property="likeLabel" destination="8qk-f6-IZN" id="BQb-EK-B1K"/>
@@ -82,5 +104,8 @@
     </objects>
     <resources>
         <image name="like_none" width="40" height="40"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

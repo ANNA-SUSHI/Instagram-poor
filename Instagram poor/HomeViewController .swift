@@ -72,8 +72,32 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             // セル内のボタンのアクションをソースコードで設定する
             cell.likeButton.addTarget(self, action:#selector(handleButton(_:forEvent:)), for: .touchUpInside)
 
+            cell.commentButton.addTarget(self, action:#selector(handleCommentButton(_:forEvent:)) , for: .touchUpInside)
             return cell
         }
+    @objc func handleCommentButton(_ sender: UIButton, forEvent event: UIEvent) {
+        let touch = event.allTouches?.first
+        let point = touch!.location(in: self.tableView)
+        let indexPath = tableView.indexPathForRow(at: point)
+        let postData = postArray[indexPath!.row]
+        let alertController = UIAlertController(title: "comment 送信", message: "", preferredStyle: .alert)
+        alertController.addTextField { textField in
+            textField.placeholder = "comment 入力して下さい"
+        }
+        
+        alertController.addAction(UIAlertAction(title: "送信", style: .default, handler: {(action) in
+            let commentText = alertController.textFields![0].text!
+            let name = Auth.auth().currentUser!.displayName!
+            let comment = "\(commentText):\(name)"
+            let update = FieldValue.arrayUnion([comment])
+            let postRef = Firestore.firestore().collection(Const.PostPath).document(postData.id)
+            postRef.updateData(["comments": update])
+            
+        }))
+        
+        
+        present(alertController, animated: true)
+    }
     // セル内のボタンがタップされた時に呼ばれるメソッド
         @objc func handleButton(_ sender: UIButton, forEvent event: UIEvent) {
             print("DEBUG_PRINT: likeボタンがタップされました。")
